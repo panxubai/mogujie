@@ -1,0 +1,219 @@
+@import "main.scss";
+
+#spxqContent{
+    width:100%;
+    height:auto;
+    position: relative;
+    #spxqBanner{
+        width:100%;
+        height:450px;
+        #spxqWrapper{
+         width:100%;
+        height:100%;
+         img{
+             width:100%;
+            height:100%; 
+         }
+        }
+    }
+}
+#spxqFooter{
+    width:100%;
+    height:100%;
+    @include flexBox;
+    @include flex-direction('row');
+    div{
+        width:14%;
+        height:100%;
+        text-align: center;
+        font:13px/46px '';
+        border-left:1px solid #ededed;
+    }
+    div:nth-child(n+4){
+        width:30%;
+    }
+    div:nth-child(4){
+        background:#ffe6e8;
+        color:#ff4e85;
+    }
+     div:nth-child(5){
+        background:#ff4e85;
+        color:#fff;
+    }
+}
+
+#spxqTittle{
+    width:90%;
+    margin:10px auto;
+    p{
+        width:100%;
+        height:30px;
+         font:14px/18px '';
+    }
+    span{
+         font:25px/50px '';
+         i{
+             margin-left:20px;
+            font:12px/0 ''; 
+            text-decoration: line-through;
+            color:#999999;
+         }
+    }
+    b{
+        display: block;
+        height:30px;
+        font-size:13px; 
+         color:#999999;
+    }
+    ol{
+        width:100%;
+        height: 30px;
+        overflow: hidden;
+        border-top:1px solid #ededed;
+        border-bottom:1px solid #ededed;
+        strong{
+             font:12px/30px ''; 
+             margin-left:8px;
+        }
+    }
+}
+#mainImg{
+    width:100%;
+    height:auto;
+    img{
+       width:100%; 
+    }
+}
+#addCart{
+    position:fixed;
+    width:100%;
+    height:350px;
+    background:#fff;
+    bottom:0;
+    z-index: 999;
+    display: none;
+    #cartDiv{
+    position: absolute;
+    width:100px;
+    height:180px; 
+    top:-90px;
+    left:30px;
+        img{
+             width:100px;
+             height:180px; 
+        
+        }
+    }
+    span{
+        margin-left:150px;
+        font:20px/40px '';
+    }
+    p{
+        margin-left:150px;
+        font:13px/20px ''; 
+    }
+    #yanse{
+        width:90%;
+        height:50px;
+        margin-left:5%;
+        margin-top:40px;
+        a{
+            display: block;
+            margin-bottom: 5px;
+        }
+        strong{
+            display:inline-block;
+            min-width:60px;
+            height:20px;
+            text-align: center;
+            font:13px/20px ''; 
+            margin-left:5px;
+            float:left;
+            border:1px solid #000 ;
+         
+            border-radius: 2px;
+        }
+         .active{
+             border:1px solid #f27a91 ;
+            color:#f27a91;
+        }
+        
+    }
+    #chima{
+        width:90%;
+        height:50px;
+        margin-left:5%;
+        margin-top:10px;
+        a{
+            display: block;
+            margin-bottom: 5px;
+        }
+        strong{
+            
+            min-width:40px;
+            height:20px;
+            text-align: center;
+            font:13px/20px ''; 
+            margin-left:5px;
+            display:inline-block;
+            border-radius: 2px;
+            border:1px solid #000 ;
+        }
+        .active{
+             border:1px solid #f27a91 ;
+            color:#f27a91;
+        }
+        
+    }
+ #number{
+        width:90%;
+        height:50px;
+        margin-left:5%;
+        margin-top:20px;
+        a{
+            display: block;
+            margin-bottom: 5px;
+        }
+        ul{
+            width:90px;
+            height:30px;
+            border:1px solid #8c8c8c;
+            li{
+            touch-action: none;
+            text-align: center;
+            font:13px/30px ''; 
+            box-sizing: border-box;    
+            width:30px;
+            height:30px;
+            float: left;
+            }
+            li:nth-child(2){
+                 border-right:1px solid #8c8c8c;
+                  border-left:1px solid #8c8c8c;
+            }
+        }
+        
+    }
+    #btnCart{
+        width:100%;
+        height:40px;
+        text-align: center;
+        font:18px/30px ''; 
+        border: none;
+        background:#ff488c;
+        color:#fff ;
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+    #guanbi{
+        text-align: center;
+        font:15px/30px ''; 
+        width:30px;
+        height:30px;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+}
+
